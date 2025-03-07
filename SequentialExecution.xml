@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SequentialExecution" parallel="none">
+  
+  <!-- Test for BASIC execution type -->
+  <test name="Test01_Basic">
+    <parameter name="executionType" value="BASIC"/>
+    <parameter name="numberOfRounds" value="5"/>
+    <classes>
+      <class name="tests.SequenceMemoryGameTest">
+        <!-- Specify the methods you want to run -->
+        <methods>
+          <include name="test_Run_the_game_until"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+
+  <!-- Test for CONCURRENCY execution type -->
+  <test name="Test02_Concurrency">
+    <parameter name="executionType" value="CONCURRENCY"/>
+    <parameter name="numberOfRounds" value="5"/>
+    <classes>
+      <class name="tests.SequenceMemoryGameTest">
+        <!-- Specify the methods you want to run -->
+        <methods>
+          <include name="test_Run_the_game_until"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+
+  <!-- Test for JAVASCRIPT_EXECUTOR execution type -->
+  <test name="Test03_JavaScriptExecutor">
+    <parameter name="executionType" value="JAVASCRIPT_EXECUTOR"/>
+    <parameter name="numberOfRounds" value="5"/>
+    <classes>
+      <class name="tests.SequenceMemoryGameTest">
+        <!-- Specify the methods you want to run -->
+        <methods>
+          <include name="test_Run_the_game_until"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+
+</suite>
