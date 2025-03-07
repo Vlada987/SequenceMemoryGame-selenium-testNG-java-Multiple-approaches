@@ -6,9 +6,9 @@ The goal of this framework is to automate the game-play in an efficient and reli
 ## Key Features
 
 - **Multiple Execution Approaches**: The framework provides three distinct approaches for automating the Sequence Memory Game:
-  1. **Basic Selenium Approach**: Utilizes waits and loops to interact with the page elements.
-  2. **Complex Concurrent Logic**: Listens to multiple elements (9 in total) simultaneously using concurrent logic.
-  3. **JavaScript Injection**: Injects JavaScript code to listen for changes in elements on the page.
+  -. **Basic Selenium Approach**: Utilizes waits and loops to interact with the page elements.
+  -. **Complex Concurrent Logic**: Listens to multiple elements (9 in total) simultaneously using concurrent logic.
+  -. **JavaScript Injection**: Injects JavaScript code to listen for changes in elements on the page.
 
 - **Parallel Execution**: All three approaches can be executed in parallel or one-by-one, depending on the use case.
 
